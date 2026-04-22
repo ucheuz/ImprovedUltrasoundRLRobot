@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputsWindow</class>
+ <widget class="QDialog" name="InputsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inputs</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_probeSelect">
+     <property name="title">
+      <string>Select probes</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="checkBox_probeY">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="checkBox_probeZ">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkBox_probeX">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkBox_probeW">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>W</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget_inputs">
+     <property name="currentIndex">
+      <number>6</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::TextElideMode::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab_kinematicsTest">
+      <attribute name="title">
+       <string>Kinematics test</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="3" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_kinematicsTiltTest">
+         <property name="title">
+          <string>Tilt test</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsTiltLatPlus">
+            <property name="text">
+             <string>Tilt Lateral +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsRotateAxMinus">
+            <property name="text">
+             <string>Rotate Axial -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsRotateAxPlus">
+            <property name="text">
+             <string>Rotate Axial +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsTiltElevPlus">
+            <property name="text">
+             <string>Tilt Elev. +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsTiltLatMinus">
+            <property name="text">
+             <string>Tilt Lateral -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsTiltElevMinus">
+            <property name="text">
+             <string>Tilt Elev. -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsRotateAxPlus90">
+            <property name="text">
+             <string>Rotate Axial +90</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsRotateAxMinus90">
+            <property name="text">
+             <string>Rotate Axial -90</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_kinematicsXYZTest">
+         <property name="title">
+          <string>XYZ test</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveYMinus">
+            <property name="text">
+             <string>Move Y -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveXPlus">
+            <property name="text">
+             <string>Move X +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveXMinus">
+            <property name="text">
+             <string>Move X -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveYPlus">
+            <property name="text">
+             <string>Move Y +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveZPlus">
+            <property name="text">
+             <string>Move Z +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveZMinus">
+            <property name="text">
+             <string>Move Z -</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_kinematicsMoveTest">
+         <property name="title">
+          <string>Move test</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveLatMinus">
+            <property name="text">
+             <string>Move Lateral -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveAxMinus">
+            <property name="text">
+             <string>Move Axial -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveElevMinus">
+            <property name="text">
+             <string>Move Elev. -</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveAxPlus">
+            <property name="text">
+             <string>Move Axial +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveElevPlus">
+            <property name="text">
+             <string>Move Elev. +</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_kinematicsMoveLatPlus">
+            <property name="text">
+             <string>Move Lateral +</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_alignToSurface">
+         <property name="text">
+          <string>Align to surface</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_goToNeutral">
+         <property name="text">
+          <string>Go to neutral</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButton_runTestSequence">
+         <property name="text">
+          <string>Run test sequence</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_controlPanel">
+      <attribute name="title">
+       <string>Control panel</string>
+      </attribute>
+      <widget class="QLabel" name="label_controlPanelConnectionStatus">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>241</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Disconnected</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_IGTL">
+      <attribute name="title">
+       <string>IGTL</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_igtlConnection">
+         <property name="title">
+          <string>Connection</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_igtlConnectionStatus">
+            <property name="text">
+             <string>Disconnected</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_igtlPort">
+            <property name="text">
+             <string>Receive port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_igtlPort">
+            <property name="text">
+             <string>11000</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_igtlPoseData">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Current pose data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="5" column="3">
+           <widget class="QLabel" name="label_igtlQZ">
+            <property name="text">
+             <string>QZ:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLabel" name="label_igtlQZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_igtlXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_igtlQX">
+            <property name="text">
+             <string>QX:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_igtlZ">
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_igtlQ0Val">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_igtlY">
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_igtlQ0">
+            <property name="text">
+             <string>Q0:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_igtlQXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="label_igtlQY">
+            <property name="text">
+             <string>QY:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_igtlYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_igtlZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLabel" name="label_igtlQYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_igtlX">
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2" colspan="2">
+           <widget class="QLabel" name="label_igtlValid">
+            <property name="text">
+             <string>No data</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="spinBox_probeNum">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>3</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_probeNum">
+            <property name="text">
+             <string>Probe:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="igtlVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_SpaceMouse">
+      <attribute name="title">
+       <string>SpaceMouse</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_SpaceMouseConnectionStatus">
+         <property name="text">
+          <string>Disconnected</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_SpaceMousePoseData">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Current pose data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_SpaceMousePitch">
+            <property name="text">
+             <string>Pitch:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_SpaceMouseYaw">
+            <property name="text">
+             <string>Yaw:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_SpaceMouseXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_SpaceMouseY">
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_SpaceMousePitchVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_SpaceMouseRoll">
+            <property name="text">
+             <string>Roll:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_SpaceMouseYawVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_SpaceMouseYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_SpaceMouseZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_SpaceMouseZ">
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_SpaceMouseRollVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_SpaceMouseX">
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLabel" name="label_SpaceMouseValid">
+            <property name="text">
+             <string>No data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="SpaceMouseVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_Joystick">
+      <attribute name="title">
+       <string>Joystick</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_joystickPoseData">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Current pose data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="4" column="3">
+           <widget class="QLabel" name="label_joystickQZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_joystickQ0">
+            <property name="text">
+             <string>Q0:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_joystickQY">
+            <property name="text">
+             <string>QY:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_joystickXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_joystickY">
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_joystickQZ">
+            <property name="text">
+             <string>QZ:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_joystickQ0Val">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_joystickQX">
+            <property name="text">
+             <string>QX:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_joystickQYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_joystickYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_joystickZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_joystickZ">
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_joystickQXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_joystickX">
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="4">
+           <widget class="QLabel" name="label_joystickValid">
+            <property name="text">
+             <string>No data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_joystickConnection">
+         <property name="title">
+          <string>Connection</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_joystickAddress">
+            <property name="text">
+             <string>Joystick IP address:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_joystickPort">
+            <property name="text">
+             <string>Receive port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_joystickPort">
+            <property name="text">
+             <string>12000</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_joystickAddress">
+            <property name="text">
+             <string>192.168.0.2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_joystickConnectionStatus">
+            <property name="text">
+             <string>Disconnected</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <spacer name="joystickVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_surfacePoints">
+      <attribute name="title">
+       <string>Surface points</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="groupBox_SurfacePointsConnection">
+         <property name="title">
+          <string>Connection</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_SurfacePointsAddress">
+            <property name="text">
+             <string>IP address:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_surfacePointsPort">
+            <property name="text">
+             <string>Receive port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_surfacePointsPort">
+            <property name="text">
+             <string>6000</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_surfacePointsAddress">
+            <property name="text">
+             <string>127.0.0.1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_surfacePointsConnectionStatus">
+            <property name="text">
+             <string>Disconnected</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_surfacePointsPoseData">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Current pose data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_surfacePointsNX">
+            <property name="text">
+             <string>Q0:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_surfacePointsNZ">
+            <property name="text">
+             <string>QY:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_surfacePointsXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_surfacePointsY">
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_surfacePointsNXVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_surfacePointsNY">
+            <property name="text">
+             <string>QX:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_surfacePointsNZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_surfacePointsYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_surfacePointsZVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_surfacePointsZ">
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_surfacePointsNYVal">
+            <property name="text">
+             <string>--.--</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_surfacePointsX">
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLabel" name="label_surfacePointsValid">
+            <property name="text">
+             <string>No data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="surfacePointsVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_rlInput">
+      <attribute name="title">
+       <string>RL Input</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_rl">
+       <item>
+        <widget class="QGroupBox" name="groupBox_rlConnection">
+         <property name="title">
+          <string>Connection</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_rl">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_rlPortLabel">
+            <property name="text">
+             <string>Listen port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_rlPort">
+            <property name="text">
+             <string>12345</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="label_rlConnectionStatus">
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Disconnected</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_rlStatus">
+         <property name="title">
+          <string>RL Model Status</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_rlStatus">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_rlLastCommand">
+            <property name="text">
+             <string>Last command: none</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="rlVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

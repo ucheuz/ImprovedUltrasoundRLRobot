@@ -1,0 +1,7 @@
+add_subdirectory(ExternalInputs)
+add_subdirectory(Kinematics)
+add_subdirectory(MotorControl)
+add_subdirectory(RobotControl)
+add_subdirectory(RobotPoseModel)
+add_subdirectory(ScanSpace)
+add_subdirectory(SensorControl)
