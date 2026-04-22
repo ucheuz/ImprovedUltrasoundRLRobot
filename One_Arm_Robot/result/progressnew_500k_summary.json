@@ -1,0 +1,5 @@
+{
+  "run_name": "progressnew_500k",
+  "num_episodes": 7387,
+  "num_terminations": 6633
+}

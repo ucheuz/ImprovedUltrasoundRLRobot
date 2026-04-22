@@ -1,0 +1,5 @@
+{
+  "run_name": "phase2_orient_finetune_300k",
+  "num_episodes": 1316,
+  "num_terminations": 430
+}
